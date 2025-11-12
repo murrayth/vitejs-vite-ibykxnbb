@@ -127,3 +127,16 @@ body { margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto
   font-weight: 600;
   fill: #1e293b; /* darker for better contrast */
 }
+
+
+/* Sync badge */
+.pp-sync-badge {
+  margin-left: 10px;
+  padding: 4px 8px;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 999px;
+  font-size: 12px;
+  color: #374151; /* gray-700 */
+  background: #f9fafb; /* gray-50 */
+  white-space: nowrap;
+}
