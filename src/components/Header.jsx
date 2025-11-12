@@ -2,7 +2,8 @@ import React from "react";
 
 /**
  * Header.jsx
- * Purpose: Branded site header with nav and "Guide me" call-to-action.
+ * Purpose: Branded site header with nav and "Guide me" CTA.
+ * Change: Adds a small "Synced via GitHub" badge to verify GitHub → StackBlitz updates.
  */
 export default function Header({ onStartGuide }) {
   return (
@@ -39,7 +40,7 @@ export default function Header({ onStartGuide }) {
           </button>
         </nav>
 
-        {/* Right: CTA */}
+        {/* Right: CTA + Sync badge */}
         <div className="pp-actions">
           <div className="pp-search">
             <input
@@ -58,6 +59,11 @@ export default function Header({ onStartGuide }) {
           <a className="pp-cta" href="tel:+442035143180" title="Talk to an expert">
             Talk to an expert
           </a>
+
+          {/* NEW: GitHub sync badge */}
+          <span className="pp-sync-badge" title="Rendered from the latest GitHub commit">
+            Synced via GitHub
+          </span>
         </div>
       </div>
     </header>
